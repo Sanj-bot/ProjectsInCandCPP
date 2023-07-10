@@ -1,0 +1,26 @@
+//Harris benedict equation to calculate no of chocolates needed to maintain BMR(Basal Metabolic rate
+// enter weight in pounds, height in inches, age in years
+//
+#include<iostream>
+using namespace std;
+#define BAR 230;
+int main()
+{
+	int weight, height,age;
+	char gender;
+	int noOfChocolates,BMR;
+	cin>>weight>>height>>age>>gender;
+	if(gender='M'||gender=='m')
+	{
+		BMR=66+(6.3*weight)+(12.9*height)-(6.8*age);
+		noOfChocolates=BMR/BAR;
+	 	cout<<noOfChocolates<<endl;
+	 	
+	}else if(gender ='F'||gender=='f')
+	{
+		
+	  	BMR=655+(4.3*weight)+(4.7*height)-(4.7*age);	
+		noOfChocolates=BMR/BAR;
+		cout<<noOfChocolates<<endl;
+	}
+}
