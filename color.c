@@ -1,4 +1,4 @@
-
+// link for further details: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/color
 
 #include <stdio.h>
 #include <stdlib.h>
