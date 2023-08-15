@@ -4,6 +4,7 @@ using namespace std;
 int main(){
 	// project starts
 	// general comments should be written below
+	system("COLOR 1E");
 	int array[12];
 	// receiving inputs
 	cout<<"*The following program accepts input of last 12 month average rainfall stat"<<endl;
