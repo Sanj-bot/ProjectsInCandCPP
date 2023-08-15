@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+//int Convert(int x);
+int main(){
+	// project starts
+	// general comments should be written below
+	int array[12];
+	// receiving inputs
+	cout<<"*The following program accepts input of last 12 month average rainfall stat"<<endl;
+	cout<<"*The input should be in mm"<<endl;
+	//cout<<"If you wanna convert meters into mm"<<endl;
+	//int convert;
+	
+//	cout<<"Enter 1:";
+//	cin>>convert;
+//	cout<<endl;
+	//Convert(convert);
+	for(int i=0;i<12;i++)
+	{
+		cin>>array[i];
+	}
+	// average taken
+	int average;
+	average=0;
+	for(int i=0;i<12;i++)
+	{
+		average=average+array[i];
+	}
+	average=average/12;
+	
+	// deviaiton done below
+	// average -rainfall
+	int arrayDeviation[12]={0};
+	for(int j=0;j<12;j++)
+	{
+		arrayDeviation[j]=average-array[j];
+	}
+	cout<<"*The output shows average rainfall with the frickin deviation:"<<endl;
+	
+	cout<<"*MONTH"<<"\t\t"<<"AMR(average monthly rainfall)"<<"\t"<<"Deviation"<<endl;
+	for(int j=0;j<12;j++)
+	{
+		cout<<"Month "<<j+1<<" \t\t "<<array[j]<<"\t\t\t "<<arrayDeviation[j]<<endl;;
+	}
+	cout<<"END!"<<endl;
+	return 0;
+	
+}
