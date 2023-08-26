@@ -1,0 +1,35 @@
+// How many pieces of land id a comptetitive programming based problem, where an ellipse has n points and we have to give total partitions of land
+//*****************************************************************CODE IS WRITTEN BELOW***********************************************************//
+#include<iostream>
+using namespace std;
+int powerTwo(int p);
+int main()
+{
+	
+	int t;
+	cin>>t; //
+	for(int i=0;i<t;i++)// runs one time
+	{
+		int points;
+		cin>>points;//10 diya
+		int piecesOfLand;// kachra value
+		points=points-1;//9
+		piecesOfLand=powerTwo(points);// function call with value 9
+		cout<<piecesOfLand<<endl;
+	
+	}
+	
+	
+}
+
+int powerTwo(int point)
+{
+	int result=1;
+	for(int j=0;j<point;j++)// 9 value gayi
+	{
+		result=result*2;
+	}
+	return result;
+
+
+}
